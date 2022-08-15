@@ -1,16 +1,27 @@
 
 #container {
-   display: flex;;
-   flex-direction: row;
+   display: flex;
    flex-wrap: wrap;
+    width: 960px;
 }
 
+#container > div {
+    flex: 1 1 auto;
+}
 
 .box {
-    border : 1px solid green;
-    
-    flex-basis: 100%;
-    
+    background-color: green;
+    height:60px;
+    width: 60px;
 
- 
 }
+
+#diviation {
+    border: 1px solid gold;
+}
+
+
+.active {
+    background:orange;
+    transition: all 0.5s ease
+  }

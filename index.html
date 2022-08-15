@@ -14,198 +14,32 @@
 	<script>
 
         let htmlElements = '';
-     for(x = 0; x < 256; x++) {
+     for(x = 0; x < 271; x++) {
        htmlElements += '<div class="box"></div>';
 
      }
-     let container = document.getElementById("container");
-     container.innerHTML = htmlElements;
 
+ let container = document.getElementById("container");
+    container.innerHTML = htmlElements;
+    console.log(container);
 
+     const matches = document.querySelectorAll("div.box");
+            matches.forEach((box) => {
+                box.addEventListener('mouseover', () => {
+                    box.classList.toggle('active');
+                 });
+            });
 
 
-/*
 
-       let div = document.createElement('div');
-        div.style.width = '100px';
-        div.style.height = '100px';
-        //div.style.background = 'red';
-        div.style.color = 'white';
-        div.innerHTML = 'hello';
 
-        document.getElementById('container').appendChild(div);
+//const box = document.querySelectorAll('container');
 
+ 
 
-    /*    let div1 = document.createElement('div');
-        div1.style.width = '100px';
-        div1.style.height = '100px';
-        div1.style.background = 'red';
-        div1.style.color = 'white';
-        div1.innerHTML = 'hello';
 
-        document.getElementById('container').appendChild(div1);
 
 
-        let div2 = document.createElement('div');
-        div2.style.width = '100px';
-        div2.style.height = '100px';
-        div2.style.background = 'red';
-        div2.style.color = 'white';
-        div2.innerHTML = 'hello';
-
-        document.getElementById('container').appendChild(div2);
-
-
-
-        let div3 = document.createElement('div');
-        div3.style.width = '100px';
-        div3.style.height = '100px';
-        div3.style.background = 'red';
-        div3.style.color = 'white';
-        div3.innerHTML = 'hello';
-
-        document.getElementById('container').appendChild(div3);
-
-
-
-
-       let div4 = document.createElement('div');
-        div4.style.width = '100px';
-        div4.style.height = '100px';
-        div4.style.background = 'red';
-        div4.style.color = 'white';
-        div4.innerHTML = 'hello';
-
-        document.getElementById('container').appendChild(div4);
-
-
-
-
-        let div5 = document.createElement('div');
-        div5.style.width = '100px';
-        div5.style.height = '100px';
-        div5.style.background = 'red';
-        div5.style.color = 'white';
-        div5.innerHTML = 'hello';
-
-        document.getElementById('container').appendChild(div5);
-
-
-
-
-        let div6 = document.createElement('div');
-        div6.style.width = '100px';
-        div6.style.height = '100px';
-        div6.style.background = 'red';
-        div6.style.color = 'white';
-        div6.innerHTML = 'hello';
-
-        document.getElementById('container').appendChild(div6);
-
-
-
-
-        let div7 = document.createElement('div');
-        div7.style.width = '100px';
-        div7.style.height = '100px';
-        div7.style.background = 'red';
-        div7.style.color = 'white';
-        div7.innerHTML = 'hello8';
-
-        document.getElementById('container').appendChild(div7);
-
-
-
-
-       let div8 = document.createElement('div');
-        div8.style.width = '100px';
-        div8.style.height = '100px';
-        div8.style.background = 'red';
-        div8.style.color = 'white';
-        div8.innerHTML = 'hello9';
-
-        document.getElementById('container').appendChild(div8);
-
-
-
-
-        let div9 = document.createElement('div');
-        div9.style.width = '100px';
-        div9.style.height = '100px';
-        div9.style.background = 'red';
-        div9.style.color = 'white';
-        div9.innerHTML = 'hello10';
-
-        document.getElementById('container').appendChild(div9);
-
-       let div10 = document.createElement('div');
-        div10.style.width = '100px';
-        div10.style.height = '100px';
-        div10.style.background = 'red';
-        div10.style.color = 'white';
-        div10.innerHTML = 'hello';
-
-        document.getElementById('container').appendChild(div10);
-
-
-
-       let div11 = document.createElement('div');
-        div11.style.width = '100px';
-        div11.style.height = '100px';
-        div11.style.background = 'red';
-        div11.style.color = 'white';
-        div11.innerHTML = 'hello';
-
-        document.getElementById('container').appendChild(div11);
-
-
-        let div12 = document.createElement('div');
-        div12.style.width = '100px';
-        div12.style.height = '100px';
-        div12.style.background = 'red';
-        div12.style.color = 'white';
-        div12.innerHTML = 'hello';
-
-        document.getElementById('container').appendChild(div12);
-
-
-
-        let div13 = document.createElement('div');
-        div13.style.width = '100px';
-        div13.style.height = '100px';
-        div13.style.background = 'red';
-        div13.style.color = 'white';
-        div13.innerHTML = 'hello';
-
-        document.getElementById('container').appendChild(div13);
-
-
-
-
-        let div14 = document.createElement('div');
-        div14.style.width = '100px';
-        div14.style.height = '100px';
-        div14.style.background = 'red';
-        div14.style.color = 'white';
-        div14.innerHTML = 'hello';
-
-        document.getElementById('container').appendChild(div14);
-
-
-
-
-        let div15 = document.createElement('div');
-        div15.style.width = '100px';
-        div15.style.height = '100px';
-        div15.style.background = 'red';
-        div15.style.color = 'white';
-        div15.innerHTML = 'hello';
-
-        document.getElementById('container').appendChild(div15);
-
-
-
-*/
 
 
     </script>
