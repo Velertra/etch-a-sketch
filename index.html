@@ -15,37 +15,46 @@
         </div>
 	<script>
 
-iThinkThisIsOne();
+
 
 const startOver = document.querySelector("#startOver");
                 startOver.addEventListener('click', () => {
                     iThinkThisIsOne();
                  });
-            
-function iThinkThisIsOne () {
-        let htmlElements = '';
-        let y = prompt('how many','')
-        let arrayer = y * y; 
 
-     for(x = 0; x < arrayer; x++) {
-       htmlElements += '<div class="box"></div>';
-
-     }
+      
     
- let container = document.getElementById("container");
+   
+        iThinkThisIsOne();   
+        
+    function iThinkThisIsOne () {
+     y =  prompt('how many',''); 
+     let htmlElements = '';
+     let arrayer = y * y; 
+      for(x = 0; x < arrayer; x++) {
+          htmlElements += '<div class="box"></div>';
+       
+                   
+              } 
+let container = document.getElementById("container");
     container.innerHTML = htmlElements;
-    console.log(container);
 
+ container.style.gridTemplateColumns = `repeat(${y}, 1fr)`;
+ 
      const matches = document.querySelectorAll("div.box");
             matches.forEach((box) => {
                 box.addEventListener('mouseover', () => {
                     box.classList.add('active');
                  });
             });
-
 };
 
 
+
+
+//container.style.gridTemplateRows = '30vw'
+let l = 22;
+console.log(l);
 //const box = document.querySelectorAll('container');
 
  
