@@ -7,18 +7,31 @@
   </head>
   <body>
 
+    <div id ='root'>
 
-    <div id="container"></div>
+        <button id='startOver'>Erase</button>
+        <div id="container"></div>
 
-
+        </div>
 	<script>
 
+iThinkThisIsOne();
+
+const startOver = document.querySelector("#startOver");
+                startOver.addEventListener('click', () => {
+                    iThinkThisIsOne();
+                 });
+            
+function iThinkThisIsOne () {
         let htmlElements = '';
-     for(x = 0; x < 271; x++) {
+        let y = prompt('how many','')
+        let arrayer = y * y; 
+
+     for(x = 0; x < arrayer; x++) {
        htmlElements += '<div class="box"></div>';
 
      }
-
+    
  let container = document.getElementById("container");
     container.innerHTML = htmlElements;
     console.log(container);
@@ -26,11 +39,11 @@
      const matches = document.querySelectorAll("div.box");
             matches.forEach((box) => {
                 box.addEventListener('mouseover', () => {
-                    box.classList.toggle('active');
+                    box.classList.add('active');
                  });
             });
 
-
+};
 
 
 //const box = document.querySelectorAll('container');
